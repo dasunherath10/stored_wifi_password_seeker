@@ -1,3 +1,6 @@
+input("[published by dasun herath]")
+
+
 import subprocess
 
 data = subprocess.check_output(['netsh', 'wlan', 'show', 'profiles']).decode('utf-8').split('\n')
@@ -10,4 +13,4 @@ for i in profiles:
     except IndexError:
         print ("{:<30}|  {:<}".format(i, ""))
 
-input("done... [published by dasun herath]")
+input("done...")
